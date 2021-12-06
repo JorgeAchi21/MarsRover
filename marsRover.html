@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mars Rover</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+
+</head>
+<body>
+    <h1 class="display-5 text-primary bold text-center"> <strong>ROVER MARS</strong> sequence movement analysis</h1>
+    
+    <div class="jumbotron">
+        <p class="lead">This aplication analisses the Mars Rover movements.</p>
+        <p class="lead">You must to introduce all the data to obtaine info about the Mars Rover path.</p>
+        <hr class="my-4">
+
+        <form action="procesado.php" method="post">
+        <h2 class="text-muted">Dimensions from the area:</h2>
+
+        <label for="tamX">X size:</label>
+        <input type="number" name="tamX" id="tamX" min="0" placeholder="20" value="20"><br>
+
+        <label for="tamY">Y size:</label>
+        <input type="number" name="tamY" id="tamY" min="0" placeholder="20" value="20"><br>
+        <p class="lead text-success">Aditional info: axis origin bottom-left corner.</p>
+        <hr class="my-4">
+
+        <h2 class="text-muted">Inital ROVER MARS status:</h2>
+        <label for="posIniX">Initial position X:</label>
+        <input type="number" name="posIniX" id="posIniX" min="0" placeholder="5" value="5"><br>
+        
+        <label for="posIniY">Initial position Y:</label>
+        <input type="number" name="posIniY" id="posIniY" min="0" placeholder="5" value="5"><br>
+        
+        <label for="cars">Inital course (N:north, S:south, E:est, W:west):</label>
+        <select name="orientation" id="orientation" value="N">
+          <option value="N">North</option>
+          <option value="S">South</option>
+          <option value="E">East</option>
+          <option value="W">West</option>
+        </select> 
+        <hr class="my-4">
+        
+        <h2 class="text-muted">Movements secuence:</h2>
+        <p class="lead text-success">All the sequence must be a valid character sequence</p>
+        <p class="lead text-success">A: Advance, L :turn Left, R :turn Right</p>
+        <p class="lead text-success">Sequence example: AAARRLL</p>
+        <label for="secuencia">Movements to analize:</label>
+        <input type="text" name="secuencia" id="secuencia" placeholder="AAARRLL" value="AAARRLL"><br>
+        
+        
+        <hr class="my-4">
+        <button class="btn btn-primary btn-lg">Start Analisis..</button>
+        </form>
+
+      </div>
+
+    
+    <!-- bootstrap  -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    
+</body>
+</html>
