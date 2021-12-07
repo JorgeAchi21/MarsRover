@@ -12,12 +12,21 @@
 </head>
 <body>
     <?php
+        // variables de entrada
         $tamX = $_POST["tamX"];
         $tamY= $_POST["tamY"];
         $posIniX = $_POST["posIniX"];
         $posIniY = $_POST["posIniY"];
-        $orientacion = $_POST["orientation"];
+        $orientacionIni = $_POST["orientation"];
         $secuencia = $_POST["secuencia"];
+
+        // variables de procesado
+        $arrTxtOutput = []; //arr de salida de datos
+        $posX;
+        $posY;
+        $orientacion;
+        $resultaOk = True;
+    
 
         //===validaciones
         if (empty($tamX)){
@@ -32,7 +41,7 @@
         if (empty($posIniY)){
             echo "Variable pos ini Y empty<br>";
         }
-        if (empty($orientacion)){
+        if (empty($orientacionIni)){
             echo "Variable orientation empty<br>";
         }
         if (empty($secuencia)){
@@ -52,7 +61,96 @@
         } else {
             $posY = $posIniY;
         }
-        //
+
+        //validar secuencia de movimientos
+        if( strlen($secuencia) < 1 ){
+            echo "Secuencia vacia.";
+        } else {
+            for($i = 0 ; $i < strlen($secuencia); $i++){
+                $car = substr($secuencia, $i, 1);
+                if ( $car == "A" || $car == "L" || $car == "R"){
+                    //..si todo ok no hace nada
+                } else {
+                    echo "Secuencica con caracteres incorrectos: " . $car . " en la posicion: " . $i . "<br>";
+                    $resultaOk = False;
+                }
+            }
+        }
+
+        //preparando bucle...
+        $orientacion = $orientacionIni;
+        $txtOutput = "Initial position: X:" . $posX . " - Y:" . $posY . " -Course:" . $orientacion;
+        array_push($arrTxtOutput, $txtOutput);
+
+        // === Analisis secuencia de movimientos.
+        $tamSecuencia = strlen($secuencia);
+        for($i = 0 ; $i<= $tamSecuencia ; $i ++ ){
+            $paso = substr($secuencia, $i , 1);            
+            
+            
+            if ($paso == "A"){ //Advance
+                switch($orientacion){
+                    case "N": 
+                        $posY++;
+                        break;
+                    case "S": 
+                        $posY--;
+                        break;
+                    case "E": 
+                        $posX++;
+                        break;
+                    case "W": 
+                        $posX--;
+                        break;
+                }
+
+            } else if ($paso == "L"){ //l Cambio de orientacion
+                switch ($orientacion){
+                    case "N":
+                        $orientacion = "W";
+                        break;
+                    case "S":
+                        $orientacion = "E";
+                        break;
+                    case "E":
+                        $orientacion = "N";
+                        break;
+                    case "W":
+                        $orientacion = "S";
+                        break;
+                }    
+
+            } else if ($paso == "R"){
+                switch ($orientacion){
+                    case "N":
+                        $orientacion = "E";
+                        break;
+                    case "S":
+                        $orientacion = "W";
+                        break;
+                    case "E":
+                        $orientacion = "S";
+                        break;
+                    case "W":
+                        $orientacion = "N";
+                        break;
+                }
+
+            }
+
+            //comprobar que no se han excedido los limites de la cuadricula
+            if ($posX > $tamX || $posX <0 ){
+                $resultaOk = False;
+                break;
+                
+            }
+            if ($posY > $tamY || $posY <0 ){
+                $resultaOk = False;
+                break;
+            }
+            $txtOutput = "Step: " . $i . "/" . $tamSecuencia . " - Movement/Orientation: " . $paso . " - PosX: " . $posX . " - PosY: " . $posY . " - Orientation: " . $orientacion;
+            array_push($arrTxtOutput, $txtOutput);
+        }
 
 
     ?>
@@ -60,7 +158,7 @@
     <h1 class="display-5 text-primary bold text-center">Procesado de secuencia movimientos <strong>Mars Rover</strong></h1>
 
     <div class="jumbotron">
-        <h5><strong>Initial values:</strong></h5>
+        <h5 class="text text-primary"><strong>Initial values:</strong></h5>
         <h5>Tam X: <?= $tamX; ?> </h5>
         <h5>Tam Y: <?= $tamY; ?> </h5>
         <h5>Posicion inicial X: <?= $posIniX; ?> </h5>
@@ -69,6 +167,24 @@
         <h5>Secuencia de movimientos: <?= $secuencia; ?> </h5>
 
         <br>
+        <br>
+        <h5 class="text text-primary"><strong>Secuence analysis:</strong></h5>
+        <?php
+        $text="";
+
+        //mensaje de salida
+        if ($resultaOk== True){
+            echo "<h1 class='bg-primary text-center'><strong>Secuence succefull</strong></h1>";
+        } else {
+            echo "<h1 class='bg-danger text-center'>Secuence error...</h1>";
+        }
+
+        //impresion de secuencia
+        for ($i = 0 ; $i < count($arrTxtOutput) ; $i++){
+            echo "<p>" . $arrTxtOutput[$i] . "</p>";
+        }
+
+        ?>
         <br>
         <a class="btn btn-primary" href="marsRover.html">Return to home</a>
 
