@@ -25,4 +25,4 @@ bla bla bla
 Browwer Support:
 This app was tested in:
 -Firefox: 94.0.2
--Chorme: 96.0.4664.93
+-Chrome: 96.0.4664.93
