@@ -1,14 +1,14 @@
 # Proyecto MarsRover
-Introduction:
+##Introduction:
 bla bla bla
 
-Spanish/Castellano:
+##Spanish/Castellano:
 Este proyecto realiza el analisis de la trayectoria de un Rover Mars, dentro de unas coordenadas.
 
-English/Ingles.
-bl
+##English/Ingles.
+bla bla bla
 
-Installation:
+###Installation:
 bla bla bla
 
 Download:
