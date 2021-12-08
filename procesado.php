@@ -159,12 +159,12 @@
 
     <div class="jumbotron">
         <h5 class="text text-primary"><strong>Initial values:</strong></h5>
-        <h5>Tam X: <?= $tamX; ?> </h5>
-        <h5>Tam Y: <?= $tamY; ?> </h5>
-        <h5>Posicion inicial X: <?= $posIniX; ?> </h5>
-        <h5>Posicion inicial Y: <?=$posIniY; ?> </h5>
-        <h5>Orientacion: <?= $orientacion; ?> </h5>
-        <h5>Secuencia de movimientos: <?= $secuencia; ?> </h5>
+        <h5>Size X: <?= $tamX; ?> </h5>
+        <h5>Size Y: <?= $tamY; ?> </h5>
+        <h5>Initial position X: <?= $posIniX; ?> </h5>
+        <h5>Initial position Y: <?=$posIniY; ?> </h5>
+        <h5>Course: <?= $orientacion; ?> </h5>
+        <h5>Sequence movements: <?= $secuencia; ?> </h5>
 
         <br>
         <br>
