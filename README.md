@@ -17,9 +17,9 @@ You must to put all  the files into your web server and must to dowload all proj
 ## Documentation:
 
 ### Images:
-![paginaInicio](https://user-images.githubusercontent.com/77396156/145160799-03b67c80-527c-4029-80fa-80b84f02d2db.jpg)
+![paginaInicio2](https://user-images.githubusercontent.com/77396156/145162559-997b241e-6acd-4fa3-8f74-f5647ffed890.jpg)
 
-![paginaProcesado](https://user-images.githubusercontent.com/77396156/145161124-f6821ea8-ea27-437b-b018-91bb9d36c438.jpg)
+![paginaProcesado2](https://user-images.githubusercontent.com/77396156/145162760-a521ca1b-08bc-4573-960e-d6cba0abfbc1.jpg)
 
 ### System requeriments:
 Necesistas descargar y poner este proyecto en un servidor web
