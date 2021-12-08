@@ -26,6 +26,8 @@ Process page:
 ![Home page](https://github.com/[JorgeAchi21]/[MarsRover]/blob/[master]/paginaProcesado.jpg?raw=true)
 
 
+![paginaInicio](https://user-images.githubusercontent.com/77396156/145160799-03b67c80-527c-4029-80fa-80b84f02d2db.jpg)
+
 ### System requeriments:
 Necesistas descargar y poner este proyecto en un servidor web
 - Fue realizado en un servidor Linux:
