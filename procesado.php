@@ -155,7 +155,7 @@
 
     ?>
 
-    <h1 class="display-5 text-primary bold text-center">Procesado de secuencia movimientos <strong>Mars Rover</strong></h1>
+    <h1 class="display-5 text-primary bold text-center">Processing sequence movements<strong>Mars Rover</strong></h1>
 
     <div class="jumbotron">
         <h5 class="text text-primary"><strong>Initial values:</strong></h5>
