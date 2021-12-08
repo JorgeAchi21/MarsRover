@@ -14,19 +14,12 @@ This project performs the analysis of the trajectory of a Rover Mars, within pre
 You must to put all  the files into your web server and must to dowload all project files.
 \\ipServer\index.html
 
-### Documentation:
+## Documentation:
 
 ### Images:
-Starting page:
-[![Starting page](Starting page "Starting page")](https://github.com/JorgeAchi21/MarsRover/blob/master/img/paginaInicio.jpg "Starting page")
-
-Process page:
-[![Process page](Process page "Process page")](https://github.com/JorgeAchi21/MarsRover/tree/master/img/paginaProcesado.jpg "Process page")
-
-![Home page](https://github.com/[JorgeAchi21]/[MarsRover]/blob/[master]/paginaProcesado.jpg?raw=true)
-
-
 ![paginaInicio](https://user-images.githubusercontent.com/77396156/145160799-03b67c80-527c-4029-80fa-80b84f02d2db.jpg)
+
+![paginaProcesado](https://user-images.githubusercontent.com/77396156/145161124-f6821ea8-ea27-437b-b018-91bb9d36c438.jpg)
 
 ### System requeriments:
 Necesistas descargar y poner este proyecto en un servidor web
