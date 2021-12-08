@@ -1,7 +1,11 @@
+<<<<<<< HEAD
 # MarsRover Project
 =============
 
 ** Table of Contents **
+=======
+# Proyecto MarsRover
+>>>>>>> b06e193e40fd1a445b15783d83d0627ab8f92b46
 
 ## Introduction:
 ## Spanish/Castellano:
@@ -13,7 +17,8 @@ This project performs the analysis of the trajectory of a Rover Mars, within pre
 ### Installation and starting:
 You must to dowload all project files into your web server.
 Then put in your web broser the starting address to call de index page: 
-\\ipServer\index.html
+
+\\\ipServer\index.html
 
 ## Documentation:
 Put all the data required for analize the path, and push the button "start analisys".
@@ -32,6 +37,7 @@ Put all the data required for analize the path, and push the button "start anali
 
 ### Download:
 You can dowload this project from GitHub:
+
  `$ git clone https://github.com/JorgeAchi21/MarsRover.git`
 
 ### Browwer Support:
