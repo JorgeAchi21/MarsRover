@@ -1,11 +1,4 @@
-<<<<<<< HEAD
 # MarsRover Project
-=============
-
-** Table of Contents **
-=======
-# Proyecto MarsRover
->>>>>>> b06e193e40fd1a445b15783d83d0627ab8f92b46
 
 ## Introduction:
 ## Spanish/Castellano:
