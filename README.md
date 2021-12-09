@@ -19,7 +19,8 @@ This project performs the analysis of the trajectory of a Rover Mars, within pre
 #### Download:
 First you must dowload this project from GitHub, and put in into your web server.
 
- `$ git clone https://github.com/JorgeAchi21/MarsRover.git`
+Use this command to clone the repository:
+`git clone https://github.com/JorgeAchi21/MarsRover.git`
 
 Then put in your web broser the starting address to call de index page: 
 
