@@ -1,7 +1,5 @@
 # Proyecto MarsRover
 
-** Table of Contents **
-
 ## Introduction:
 ## Spanish/Castellano:
 Este proyecto realiza el analisis de la trayectoria de un Rover Mars, dentro de unas coordenadas asignadas previamente.
